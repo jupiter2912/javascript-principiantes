@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Strings</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+
+    //Concatenar texto
+    console.log('Hello ' + 'World')
+
+    //template literals
+    const NAME = 'Cristina'
+    console.log('Hello ' + NAME) // PRIMERA FORMA
+    console.log(`Hello ${NAME}`) // FORMA TEMPLATE LITERALS ( CON LAS COMILLAS Y EL ${} PARA LA VARIABLE)
+
+    //typeof
+    console.log(typeof(NAME))
+
+    //.length (longitud)
+    console.log(NAME.length)
+
+    //.includes() (si incluye dicho texto)
+    console.log(NAME.includes('CRr'))
+
+    //.slice(start, end) (Cortar el texto)
+    console.log(NAME.slice(2,4))
+
+    //.replace ('este texto', 'por este otro') (reemplazar)
+    console.log(NAME.replace('na', 'jo'))
+
+    //.trim() limpieza del texto POR DELANTE Y POR DETRAS
+    const TEXTO = '     as   def ff'
+    console.log(TEXTO.trim())
+
+    //.split(',') // separar cadenas de texto en arrays con los elementos
+    const GEOLOCATION = 'Calle Whatever, 7, 1D'
+    console.log(GEOLOCATION.split(','))
+    </script>
+</body>
+</html>
