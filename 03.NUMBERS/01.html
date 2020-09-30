@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Numbers</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        //typeof (nos dice el tipo de una variable)
+        let num = 20
+        console.log(typeof(num))// dara number
+
+        //NaN (no es un numero)
+        const notNumber = 2 + 'asdf'
+        console.log(typeof(notNumber)) // dara string porque ha concatenado los valores en notNumber
+
+        //isNaN (comprobar si no es nu numero)
+        console.log(isNaN(NaN))         //true
+        console.log(isNaN('whatever'))  //true
+        console.log(isNaN('12'))        //false porque si lo toma como un numero en formato string
+        console.log(isNaN(12))          // false porque si que es un numero
+
+        //toString()
+        let number = 100
+
+        console.log(number) //100
+        console.log(number.toString) //'100'
+
+        //.toFixed() // sirva para redondear
+
+        let numberRedondeo = 100.125412
+        console.log(number.toFixed(2))
+    
+
+    
+    </script>
+</body>
+</html>
