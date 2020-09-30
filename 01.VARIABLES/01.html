@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Variables</title>
+</head>
+<body>
+    <script type="text/javascript">
+    /** La idea de esta seccion es probar de una forma muy sencilla las diferentes formas de 
+     * declarar vabiales y veas sus diferencias**/
+
+     //variables globales
+     const whatever = 'Whatever'
+     console.log(whatever)
+
+
+        //si la variable se define dentro de la funcion o dentro de la condicion, es variable de entorno local
+     if(true){
+         const helloWorld = 'helloWorld!!'
+         console.log(helloWorld)
+     }
+
+
+//********************************TIPOS DE VARIABLES ***********************************************/
+        //variables constantes
+        const name = 'Jose'
+
+        //Variables let y var pueden cambiar su valor, pero hay que inicializarlas sino no se podra acceder
+        //a ella
+        let text = 'Hello World!!'
+
+        //las var se pueden utilizar sin ser definidas
+        var whats = 'Whatever way'
+    
+    
+    
+    </script>
+</body>
+</html>
