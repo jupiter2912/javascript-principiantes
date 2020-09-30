@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+
+</head>
+<body>
+
+    <p class="newsletter-text"></p>
+    <script type = "text/javascript">
+    
+    //** ES EL MOMENTO DE GESTIONAR CADENAS DE TEXTO
+    //   TE HAN PEDIDO QUE INCLUYAS EN EL TEXTO DE LA PROXIMA NEWSLETTER
+    /**
+     * uNAS VARIABLES DINAMICAS QUE TE VIENEN DEL USUARIO
+     * NOMBRE: JOSE
+     * INTERES: Link Awakeninig
+     * DESCUENTO: 20% EN TU PROXIMA ENTRADA
+     * TEXTO: Hola USUARIO,
+     *          Como regalo de bienvenida al Club de gamers, queremos ofrecer un descuento del DESCUENTO,
+     * en el proximo lanzamiento de tu interes JUEGO.
+     * Esperamos lo disfrutes,
+     * Un saludo
+     * //
+    
+     */
+
+     const NAME = 'Jose'
+     const GAME = 'Link Awakening'
+     const DISCOUNT = 20
+
+     const NEWSLETTER =  `Hola ${NAME},
+               Como regalo de bienvenida al Club de gamers, queremos ofrecer un descuento del ${DISCOUNT} %,
+      en el proximo lanzamiento de tu interes ${GAME}.
+      Esperamos lo disfrutes,
+      Un saludo`
+    
+      //CON QUERYSELECTOR accedemos a todos los nodos del DOM
+        document.querySelector('.newsletter-text').innerHTML = NEWSLETTER;
+
+    </script>
+</body>
+</html>
