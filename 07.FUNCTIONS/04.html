@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Anonymous functions</title>
+</head>
+<body>
+    <script type = "text/javascript">
+    
+    //Estas funciones se asocian directamente a una variable
+    // no hace falta ponerles nombre a las funciones
+    var sayHello = function(name = 'World'){
+        return ` Hello ${name}`
+    }
+    
+    console.log(sayHello())
+    console.log(sayHello('Jose'))
+    </script>
+</body>
+</html>
