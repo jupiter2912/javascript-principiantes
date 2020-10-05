@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Funciones con parametros</title>
+</head>
+<body>
+    <script type ="text/javascript">
+
+        function sayHello(name = 'World') {
+            console.log('Hello ' + name)
+        }
+
+        sayHello() // al no pasarselo, cogera por defecto el que hemos dado
+        sayHello('Jose')
+
+        //funcion con parametros
+        function sum(a,b) {
+            console.log(a + b)
+        }
+        sum(2,5)
+        sum(52,5)
+    
+    </script>
+</body>
+</html>
