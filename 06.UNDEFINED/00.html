@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Undefined</title>
+</head>
+<body>
+    <script type="text/javascript">
+    
+    //UNDEFINED (cuando la variable esta definida pero no tiene un valor)
+        console.log(a)//error "a no esta definida"
+        var a = 'testing var'
+        console.log(a) // aqui si la mostraria porque ya esta definida
+
+        //con las variable let pasaria igual si ponemos el console.log antes de definirla
+        //las variables let no se puede acceder hasta que no es definida "daria error"
+        //habria que colocarlo asi
+
+        let b = 'testing let'
+        console.log(b)
+
+
+    //NULL (tiene valor pero su valor es nulo)
+        
+        console.log(c) // undefined (todavia no tiene valor)
+        var c = null
+        console.log(c) // ahora si mostraria null porque esta definida
+
+
+        let d = null
+        console.log(d)
+
+
+    
+    
+    </script>
+</body>
+</html>
