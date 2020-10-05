@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Funciones flecha / Arrow Function</title>
+</head>
+<body>
+    <script type = "text/javascript">
+    
+    //Funciones flecha (son anonimas y no tienen nombre, 
+    //mantienen el scope, vamos a poder utilizar this, y pueden tener o no un body)
+    //son funciones mas directas en la sintaxis
+    //NO hace falta poner la palabra return
+
+    const MESSAGE = 'Text example'
+
+    var sayHello = (name) => `Hello ${name}`
+    console.log(sayHello('Jose'))
+
+
+    //para funciones con body
+    var sayBye = (name) =>{return `Bye ${name}`}
+    console.log(sayBye('Cris'))
+    </script>
+</body>
+</html>
