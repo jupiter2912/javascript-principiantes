@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Logic</title>
+</head>
+<body>
+    <script type= "text/javascript">
+    /*
+    CONDICIONALES
+    Quiero irme de viaje,¿tengo suficiente dinero?
+    -Si, me voy de viaje.
+    -No, tengo que seguir ahorrando*/
+
+    const flight = 100;
+    const hotel = 50;
+    const tour = 30;
+    const TOTAL = flight + hotel + tour;
+    const BUDGET = 300;
+
+    if(BUDGET > TOTAL){
+        console.log('Si, me voy de viaje')
+    }
+    else if(BUDGET === TOTAL){
+        consle.log('Si, pero tengo un presupuesto ajustado')
+    }
+    else{
+        console.log('No, tienes que seguir ahorrando')
+    }
+
+    
+    </script>
+</body>
+</html>
