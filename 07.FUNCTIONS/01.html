@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript: Functions and variables</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        const MESSAGE = 'Hello World!!!' // variable global //si la defino dentro de la funcion el scope(entorno)
+                                                                        //es local y no sera accesible desde fuera
+
+        function sayHello(){
+            console.log(MESSAGE)
+        }
+
+        sayHello()
+
+        let message
+
+        function sayHelloConVariableInicioDentro() {
+            message = 'Say Hello Compadre'
+            console.log(message)
+        }
+        sayHelloConVariableInicioDentro()
+    
+    </script>
+</body>
+</html>
